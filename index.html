@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Two Months My Love 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <svg class="grain-overlay" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain)" opacity="0.045"/>
+  </svg>
+
+  <div class="vignette"></div>
+
+  <div class="glow-disk"></div>
+
+  <canvas id="three-canvas"></canvas>
+
+  <div id="dom-petals"></div>
+
+  <div class="ui-overlay" aria-live="polite">
+    <p class="tagline">I love you more!</p>
+    <h1 class="headline">
+      Happy <span class="accent">Two Months</span> Honeyy&nbsp;🌸
+    </h1>
+    <p class="body-text">I love to be able to say that you're my comfy space</p>
+    <div class="deco-line"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
